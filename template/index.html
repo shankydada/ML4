@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Predict Student Final Grades</h1>
+    <form action="/predict" method="post">
+        <label for="attendanceRate">Attendance Rate:</label>
+        <input type="text" id="attendanceRate" name="attendanceRate" required><br>
+
+        <label for="studyHours">Study Hours per Week:</label>
+        <input type="text" id="studyHours" name="studyHours" required><br>
+
+        <label for="familyIncome">Family Income:</label>
+        <input type="text" id="familyIncome" name="familyIncome" required><br>
+
+        <label for="parentEducationLevel">Parent Education Level:</label>
+        <input type="text" id="parentEducationLevel" name="parentEducationLevel" required><br>
+
+        <label for="schoolRating">School Rating:</label>
+        <input type="text" id="schoolRating" name="schoolRating" required><br>
+
+        <label for="extracurricularParticipation">Participation in Extracurriculars:</label>
+        <input type="text" id="extracurricularParticipation" name="extracurricularParticipation" required><br>
+
+        <label for="homeworkCompletion">Homework Completion Rate:</label>
+        <input type="text" id="homeworkCompletion" name="homeworkCompletion" required><br>
+
+        <label for="classroomBehavior">Classroom Behavior Score:</label>
+        <input type="text" id="classroomBehavior" name="classroomBehavior" required><br>
+
+        <label for="sleepHours">Hours of Sleep per Night:</label>
+        <input type="text" id="sleepHours" name="sleepHours" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
